@@ -1,0 +1,254 @@
+@import 'variables'; 
+$w-page : 350px; 
+.carding-wrapper {
+    position: absolute;
+    width: $w-page;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #eee;
+    margin: 0;
+
+    .card {
+        width: $w-page;
+        max-height: 600px ;
+
+        top: 0;
+        right: 0;
+        
+        .ul-header {
+            margin: 0;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                list-style: none;
+                &:last-child img {
+                    width: 22px;
+                    transition: 0.4s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .card-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 250px;
+                margin-bottom: 25px;
+            }
+
+            button {
+                background: none;
+                outline: none;
+                width: 120px;
+                height: 30px;
+                border: 1px solid #aaa;
+                border-radius: 30px; 
+                font-size: 8px;
+                color: #aaa;
+                font-weight: 600;
+                &:hover {
+                    transform: scale(1.2);
+                    background: $lvl3;
+                    color: $lvl1;
+                    border: none;
+                    box-shadow: 0 0 5px $lvl3;
+                }
+            }
+        }
+    }
+
+    .card-history {
+        max-width: $w-page;
+        height: 400px;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        
+        .ul-header {
+            margin: 0;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                list-style: none;
+                &:last-child img {
+                    width: 22px;
+                    transition: 0.4s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .history-lines {
+            display: grid;
+            padding: 0px 40px;
+            
+            .history-line {
+                height: 70px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .history-title-btn {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    button {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 40px;
+                        background: $lvl3;
+                        outline: none;
+                        border: none;
+                        opacity: .6;
+                        margin-right: 20px;
+                        img {
+                            width: 19px;
+                            filter: invert(1);
+                        }
+
+                        
+                    }
+
+                    p {
+                        font-weight: 200;
+                        font-size: 12px;
+                        color: #333;
+                    }
+                }
+                        span {
+                            font-size: 9px;
+                            font-weight: 400;
+                            color: #aaa;
+                        }
+            }
+        }
+
+        .view-all {
+            background: none ;
+            position: absolute;
+            right: 25%;
+            border: none;
+            margin-top: 20px;
+            color: $lvl3;
+            font-size: 16px;
+            font-weight: 600px;
+            outline: none;
+            cursor: pointer;
+            height: 40px;
+            width: 150px;
+            border-radius: 50px;
+            
+        }
+    }
+
+
+    .chart-history {
+        position: absolute;
+        width: $w-page;
+        height: 250px;
+
+        .ul-header {
+            margin: 0;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                list-style: none;
+                &:last-child img {
+                    width: 22px;
+                    transition: 0.4s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .chart-bar {
+            position: absolute;
+            display: table;
+            height: 10px;
+            width: 250px;
+            padding: 0px ;
+            background: $lvl5;
+            right: 15%;
+            border-radius: 50px;
+
+            .first-fill{
+                display: table-cell;
+                width: 33%;
+                height: 100%;
+                border-radius:  50px 0 0 50px;
+                background: #303960;
+            }
+            .second-fill{
+                display: table-cell;
+                width: 27%;
+                height: 100%;
+                background: #ea9a96;
+            }
+            .third-fill{
+                display: table-cell;
+                width:40%;
+                height: 100%;
+                background: $lvl3;
+                border-radius:  0 50px 50px 0;
+
+            }
+        }
+
+        .types {
+            margin-top: 40px;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                list-style: none;
+                font-size: 12px;
+                button {
+                    height: 22px;
+                    width: 22px;
+                    border-radius: 50px;
+                    border: 5px solid #303960;
+
+                    
+                }
+
+
+                &:nth-child(2) button {
+                    border: 5px solid #ea9a96;
+
+                }
+
+                &:nth-child(3) button {
+                    border: 5px solid $lvl3;
+
+                }
+            }
+        }
+
+
+    }
+
+}
+
+

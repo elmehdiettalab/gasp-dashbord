@@ -1,0 +1,215 @@
+@import 'variables'; 
+$content-width: 1070px; 
+.content {
+    position: relative;
+    margin: 0;
+    padding: 0 180px;
+    height: 900px;
+    height: 100vh;
+
+    .header {
+        width: $content-width;
+        height: 100px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // background: $lvl1;
+
+        .content-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                list-style: none;     
+                height: 32px;
+                width: 32px; 
+                margin-right:10px ;          
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 100%;
+                }
+
+                &:last-child{
+                    width: 100px;
+                    height: 12px;
+                    font-size: 12px;
+                    color: #555;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .cards {
+        width: $content-width;
+        height: 600px;
+        // background: $lvl1;
+        position: relative;
+        .vertical-line {
+            height: 130px;
+            border: 1px dashed $lvl1;
+            // background: #303960;
+            top: 6%;
+            left: 50%;
+            position: absolute;
+            
+        }
+        .card1 {
+            width: $content-width;
+            height: 200px;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0px 6px 6px 6px rgba($color: #000000, $alpha: 0.1);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .leftDiv {
+                padding: 0 40px;
+                height: 170px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+
+                .card1-inner {
+                    padding: 20px 0;
+                    width: 100%;
+                    button {
+                    height: 22px;
+                    width: 22px;
+                    border-radius: 50px;
+                    border: 5px solid #303960;
+                    margin-right: 10px;
+
+                    }
+
+                    span {
+                        font-size: 12px;
+                        font-weight: 300;
+                        color: #555;
+                    }
+
+                    div {
+                        padding-top: 25px;
+                        font-size: 30px;
+                        color: #303960;
+                    }
+
+                    
+                }
+
+                button {
+                    width: 110px;
+                    height: 30px;
+                    background: none;
+                    outline: none;
+                    border: 1px solid #ddd;
+                    border-radius: 70px;
+                    color: #555;
+                    img {
+                        width: 9px;
+                        filter: invert(.3);
+                    }
+                }
+            }
+            .rightDiv {
+                padding: 0 40px;
+                height: 170px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                p {
+                    color: #555;
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+                .card1-inner {
+                    padding: 20px 0;
+                    width: 100%;
+                    button {
+                    height: 22px;
+                    width: 22px;
+                    border-radius: 50px;
+                    border: 5px solid $lvl3;
+                    margin-right: 10px;
+
+                    }
+
+                    span {
+                        font-size: 12px;
+                        font-weight: 300;
+                        color: #555;
+                    }
+
+                    div {
+                        padding-top: 25px;
+                        font-size: 30px;
+                        color: $lvl3;
+                    }
+
+                    
+                }
+            }
+        }
+
+        .card2 {
+            display: inline-block;
+            width: 625px;
+            height: 400px;
+            background: white ;
+            margin-top: 20px;
+            margin-right: 20px;;
+            border-radius: 4px;
+            box-shadow: 0px 3px 3px 3px rgba($color: #000000, $alpha: 0.1);
+            .ul-header {
+                margin: 0;
+                padding: 30px 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    list-style: none;
+                    &:last-child img {
+                        width: 22px;
+                        transition: 0.4s;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+
+        .card3 {
+            display: inline-block;
+            width: 425px;
+            height: 400px;
+            background: white ;
+            border-radius: 4px;
+            box-shadow: 0px 3px 3px 3px rgba($color: #000000, $alpha: 0.1);
+            .ul-header {
+                margin: 0;
+                padding: 30px 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    list-style: none;
+                    &:last-child img {
+                        width: 22px;
+                        transition: 0.4s;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

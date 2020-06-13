@@ -1,0 +1,107 @@
+// // $lvl1 : #142850 ;
+// $lvl1: #3f3f44; 
+// $lvl2 : #27496d ; 
+// $lvl3 : #00909e ; 
+// $lvl4 : #dae1e7 ; 
+
+@import 'variables';
+
+.sidebar {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: $lvl1;
+    overflow: hidden;
+    .logo {
+        position: absolute;
+        top: 0;
+        width: 100px;
+        max-height: 100px;
+        background: $lvl3;
+        padding: 20px 35px;
+        span {
+            font-size: 40px;
+            font-weight: 900;
+            color: rgba($color: #fff, $alpha: 0.8);
+        }
+    }
+
+    .sidebar-items {
+        position: absolute;
+        width: 100%; 
+        margin: 0;
+        padding: 0 0 0 10px  ;
+        max-height:600px ;
+        top: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        li {
+            list-style: none;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            opacity: 0.5;
+            transition: all .5s;
+
+            img {
+                width: 22px;
+                filter: invert(1);
+            }
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.2);
+
+
+            }
+        }
+
+    }
+
+    .lastIcon {
+        position: absolute;
+        width: 100px;
+        height:150px ;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .imgIcon {
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            display: flex;
+            background: rgba($color: #fff, $alpha: 0.2);
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            img {
+                filter: invert(1);
+                width: 16px;
+                z-index: 3;
+                opacity: .7;
+                transition: all .5s;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &:hover {
+                    opacity: 1;
+                    transform: scale(1.2) ;
+                    
+    
+                }
+            }
+        }
+
+    }
+
+
+}
