@@ -5,6 +5,10 @@ import notif from '../imgs/notification.png';
 import plus from '../imgs/plus.png'; 
 import down from '../imgs/download.png';
 import next from '../imgs/next.png'
+import more from '../imgs/more.png'
+import rect from '../imgs/rect.png'
+import cone from '../imgs/cone.png'
+import cube from '../imgs/cube.png'
 export class Content extends Component {
     render() {
         return (
@@ -42,14 +46,14 @@ export class Content extends Component {
                     <div className="card2">
                     <ul className="ul-header">
                         <li><span>Your Income</span></li>
-                        <li><img src={next} alt=""/></li>
+                        <li><img src={more} alt=""/></li>
 
                     </ul>
                     </div>
                     <div className="card3">
                     <ul className="ul-header">
                         <li><span>Income Target Details</span></li>
-                        <li><img src={next} alt=""/></li>
+                        <li><img src={more} alt=""/></li>
 
                     </ul>
                     </div>
@@ -57,11 +61,32 @@ export class Content extends Component {
 
 {/* 3 = SAVINGs */}
                 <div className="savings">
-                    <span>You Savings</span>
+                    <span>Your Savings</span>
 
-                    <div className="saving1"></div>
-                    <div className="saving2"></div> 
-                    <div className="saving3"></div> 
+                    <div className="s-cells">
+                        <div className="saving1">
+                            <img src={cube} alt=""/>
+                            <div className="text-saving">
+                                <h4>$.240S,39</h4>
+                                <span>Saving for home</span>
+                            </div>
+                        </div>
+                        <div className="saving2">
+
+                            <img src={cone} alt=""/>
+                            <div className="text-saving">
+                                <h4>$.240S,39</h4>
+                                <span>Saving for home</span>
+                            </div>
+                        </div> 
+                        <div className="saving3">
+                            <img src={rect} alt=""/>
+                            <div className="text-saving">
+                                <h4>$.240S,39</h4>
+                                <span>Saving for home</span>
+                            </div>
+                        </div> 
+                        </div>
                 </div>
             </div>
         )
