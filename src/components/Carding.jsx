@@ -1,12 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component , useRef , useEffect} from 'react'
+import gsap from 'gsap'
 import more from '../imgs/more.png';
 import card from '../imgs/bankCard.png';
 import up from '../imgs/up-arrow.png';
 import down from '../imgs/download.png';
 import next from '../imgs/next.png'
 import '../styles/carding.scss';
-export class Carding extends Component {
+class Carding extends Component {
+        
     render() {
+        
+
         return (
             <div className="carding-wrapper">
 

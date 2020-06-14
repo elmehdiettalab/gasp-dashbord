@@ -292,3 +292,11 @@ $content-width: 1070px;
     }
 }
 
+
+
+@media (max-width: 1480px) {
+  .header {
+      color: blue($color: #000000);
+      display: none;
+  }
+}

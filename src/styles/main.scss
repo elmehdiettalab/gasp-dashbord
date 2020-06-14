@@ -1,3 +1,4 @@
+@import "./breakpoints/breakpoints.scss";
 @import 'variables'; 
 
 html, body {
@@ -13,4 +14,8 @@ html, body {
     height: 100vh;
     background: $lvl4;
     overflow: hidden;
+    @include media('<=phone') {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: black;
+    }
 }

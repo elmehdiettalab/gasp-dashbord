@@ -3,7 +3,7 @@
 // $lvl2 : #27496d ; 
 // $lvl3 : #00909e ; 
 // $lvl4 : #dae1e7 ; 
-
+@import "./breakpoints/breakpoints.scss";
 @import 'variables';
 
 .sidebar {
@@ -15,6 +15,7 @@
     bottom: 0;
     background: $lvl1;
     overflow: hidden;
+    
     .logo {
         position: absolute;
         top: 0;
@@ -22,6 +23,9 @@
         max-height: 100px;
         background: $lvl3;
         padding: 20px 35px;
+        @include media('<=tablet' ){
+            background: $lvl5;
+        }
         span {
             font-size: 40px;
             font-weight: 900;
@@ -104,4 +108,7 @@
     }
 
 
+   
+
 }
+
